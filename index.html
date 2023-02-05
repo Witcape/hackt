@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CampusTraders</title>
+</head>
+
+<body>
+
+
+    <!-- =============================== * navbar * ============================================ -->
+
+    <div class="hedder">
+        <div class="navbar">
+
+
+
+
+            <img src="images/logo.png">
+
+
+            <div class="college_select" id="college">
+                <div class="select">
+                    <p id="text"> Select Your College </p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('Thapar University, Patiala')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Thapar University, Patiala</p>
+                    </li>
+                    <li class="option" onclick="myfunction('IIT Roorkee')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>IIT Roorkee</p>
+                    </li>
+                    <li class="option" onclick="myfunction('VIT, Chennai')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>VIT, Chennai</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Manipal University')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Manipal University</p>
+                    </li>
+                    <li class="option" onclick="myfunction('BITS Pilani, Pilani Campus')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>BITS Pilani, Pilani Campus</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find Books, Bicycles etc..">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
+            </div>
+
+
+            <div class="catalouge">
+                <li><a href="#books">Books</a></li>
+                <li><a href="#bicycles">Bicycles</a></li>
+                <li><a href="#mattress">Mattress</a></li>
+                <li><a href="#laptops">Laptops</a></li>
+                <!-- <li><a href="#others">Others</a></li> -->
+                
+            </div>
+
+
+
+            <!-- <div class="language">
+                <p id="eng_tag"> English </p>
+
+                <ul class="hin_eng">
+                    <li onclick="languageolx('English')"> English </li>
+                    <li onclick="languageolx('हिन्दी')">हिन्दी</li>
+                </ul>
+
+            </div> -->
+
+
+
+
+            <div class="messeage">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+
+
+
+
+            <div class="messeage">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+
+
+
+
+            <div class="your_logo">
+                <div class="profile_pic" id="profile_pic_id">
+                    <img src="images/profile_pic.jpeg">
+                </div>
+
+                <div class="dropdwon" id="gropdwonid">
+                    <div class="nameandimg">
+                        <img src="images/pic3.jpg">
+                        <p> Oxygen Addicts</p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <hr>
+
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="selling_page">
+                <button> <i class="fa-solid fa-plus"></i>
+                    <p>SELL</p>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- =============================== * ad 1 * ============================================ -->
+
+
+<!-- 
+    <div class="ad_img">
+        <img src="images/ad1.jpg">
+        <i class="fa-regular fa-rectangle-xmark" id="ad_icon"></i>
+    </div>
+ -->
+
+
+
+    <!-- =============================== * product * ============================================ -->
+
+
+    <div class="product">
+        <div class="First_row">
+            <div class="box">
+                <a href="product.html">
+                    <img src="images/product1.jpg">
+                    <h2>₹3,500</h2>
+                    <p>Thomas and Finney 11th Edition</p>
+                    <div class="addres_data">
+                        <p>Hostel J</p>
+                        <p>Today</p>
+                    </div>
+                </a>
+            </div>
+            <div class="box">
+                <img src="images/product2.jpg">
+                <h2> ₹4,800 </h2>
+                <p>Contender Bicycle</p>
+                <div class="addres_data">
+                    <p>Hostel L</p>
+                    <p>JUL 27</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/product3.jpg">
+                <h2> ₹500</h2>
+                <p>Soft Mattress</p>
+                <div class="addres_data">
+                    <p>Hostel J</p>
+                    <p> Today </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/product4.jpg">
+                <h2> ₹30,000</h2>
+                <p> Macbook Air (2020) </p>
+                <div class="addres_data">
+                    <p>Hostel O</p>
+                    <p> Today </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="First_row">
+            <div class="box">
+                <img src="images/product5.jpg">
+                <h2> ₹5000 </h2>
+                <p>Jordans </p>
+                <div class="addres_data">
+                    <p>Hostel M</p>
+                    <p> DEC 24 </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/product6.jpg">
+                <h2> ₹500 </h2>
+                <p> Gym Belt </p>
+                <div class="addres_data">
+                    <p>Hostel O</p>
+                    <p> JAN 29 </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/product7.jpg">
+                <h2> ₹3,800 </h2>
+                <p>Air Pods</p>
+                <div class="addres_data">
+                    <p>Day Scholar</p>
+                    <p> Today </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/product8.jpg">
+                <h2> ₹39,000 </h2>
+                <p> Nikon D7000 DSLR camera </p>
+                <div class="addres_data">
+                    <p>ANDHERI WEST, MUMBAI</p>
+                    <p> FEB 02 </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="First_row">
+            <div class="box">
+                <img src="images/product9.jpg">
+                <h2> ₹400 </h2>
+                <p> Black jacket</p>
+                <div class="addres_data">
+                    <p>KANDIVALI WEST, MUMBAI</p>
+                    <p> FEB 11 </p>
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- =============================== * LOde more * ============================================ -->
+
+
+
+    <div class="load_more">
+        <button id="load_more_id"> Load More </button>
+
+
+
+        <div class="load_more_products" id="load_more_products_id">
+            <div class="First_row">
+                <div class="box">
+                    <a href="#"></a>
+                    <img src="images/product-1.jpg">
+                    <h2>₹3,500</h2>
+                    <p>Mi TV Stick</p>
+                    <div class="addres_data">
+                        <p>Bandra East, Mumbai</p>
+                        <p>Today</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/product-2.jpg">
+                    <h2> ₹4800 </h2>
+                    <p> xbox one s</p>
+                    <div class="addres_data">
+                        <p>CHEMBUR, MUMBAI</p>
+                        <p> JUL 27</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/product-3.jpg">
+                    <h2> ₹7000</h2>
+                    <p> Refrigerator</p>
+                    <div class="addres_data">
+                        <p>DHARAVI, MUMBAI</p>
+                        <p> Today </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/product-4.jpg">
+                    <h2> ₹8,00,000 </h2>
+                    <p> Mitsubishi Pajero (2012) </p>
+                    <div class="addres_data">
+                        <p>VERSOVA, MUMBAI</p>
+                        <p> Today </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="First_row">
+                <div class="box">
+                    <img src="images/product-5.jpg">
+                    <h2> ₹800 </h2>
+                    <p> Black Jeans for man</p>
+                    <div class="addres_data">
+                        <p>BORIVALI WEST, MUMBAI</p>
+                        <p> DEC 24 </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/product-6.jpg">
+                    <h2> ₹3,000 </h2>
+                    <p> Pricise corrom board</p>
+                    <div class="addres_data">
+                        <p>IC COLONY, MUMBAI</p>
+                        <p> JAN 29 </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/product-7.jpg">
+                    <h2> ₹3,800 </h2>
+                    <p> CrossBeat Torq Buds</p>
+                    <div class="addres_data">
+                        <p>DHARAVI, MUMBAI</p>
+                        <p> Today </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/product-8.jpg">
+                    <h2> ₹39,000 </h2>
+                    <p> Nikon D7000 DSLR camera </p>
+                    <div class="addres_data">
+                        <p>ANDHERI WEST, MUMBAI</p>
+                        <p> FEB 02 </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- =============================== * downlode * ============================================ -->
+
+
+    <div class="downlode_app">
+        <div class="downlode">
+            <img src="images/logo.png" class="imges">
+
+            <div class="text">
+                <h1> Try the CampusTraders app</h1>
+                <p>Buy, sell and find just about anything in your college using <br>
+                    the app on your mobile.</p>
+            </div>
+            <div class="downlode_store">
+                <p> GET YOUR APP TODAY </p>
+                <img src="images/playstore.png" alt="playstore image">
+            </div>
+        </div>
+    </div>
+
+
+
+
+  
+    <script>
+
+        //  =============================== * navbar * ============================================
+
+        let contry = document.getElementById('college');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+
+        contry.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('roted')
+        });
+        function myfunction(omkar) {
+            text.innerHTML = omkar;
+        }
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+
+
+        language.addEventListener('click', () => {
+            hin_eng.classList.toggle('display_div');
+        });
+        function languageolx(anyone) {
+            eng_tag.innerHTML = anyone;
+        }
+
+        let profile_pic_id = document.getElementById('profile_pic_id');
+        let gropdwonid = document.getElementById('gropdwonid');
+
+        profile_pic_id.addEventListener('click', () => {
+            gropdwonid.classList.toggle('block_div')
+        });
+
+
+
+
+        //  =============================== * ad 1 * ============================================
+
+
+        let ad_img = document.querySelector('.ad_img');
+        let ad_icon = document.getElementById('ad_icon');
+
+
+        ad_icon.addEventListener('click', () => {
+            ad_img.style = `display: none`;
+        });
+
+
+
+
+        //  =============================== * load more * ============================================
+
+
+        let load_more_id = document.getElementById('load_more_id');
+        let load_more_products_id = document.getElementById('load_more_products_id');
+
+
+        load_more_id.addEventListener('click', () => {
+            load_more_products_id.style = 'display:block';
+            load_more_id.style = 'display:none'
+        });
+
+
+
+
+
+
+        //  =============================== * ad 2 * ============================================
+
+
+
+        let adicon2 = document.getElementById('adicon2');
+        let ads_img2 = document.querySelector('.ads_img2');
+
+        adicon2.addEventListener('click', () => {
+            ads_img2.style = 'display: none';
+        });
+
+
+
+    </script>
+
+</body>
+
+</html>
