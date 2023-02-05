@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product page </title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+
+    <!-- =============================== * navbar * ============================================ -->
+
+    <div class="hedder">
+        <div class="navbar">
+
+
+
+
+            <img src="images/logo.png">
+
+
+
+
+
+
+            <div class="college_select" id="college">
+                <div class="select">
+                    <p id="text"> Select Your College </p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('Thapar University, Patiala')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Thapar University, Patiala</p>
+                    </li>
+                    <li class="option" onclick="myfunction('IIT Roorkee')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>IIT Roorkee</p>
+                    </li>
+                    <li class="option" onclick="myfunction('VIT, Chennai')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>VIT, Chennai</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Manipal University')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Manipal University</p>
+                    </li>
+                    <li class="option" onclick="myfunction('BITS Pilani, Pilani Campus')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>BITS Pilani, Pilani Campus</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find Cars, mobile phone and More....">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
+            </div>
+
+
+            <div class="catalouge">
+                <li><a href="#books">Books</a></li>
+                <li><a href="#bicycles">Bicycles</a></li>
+                <li><a href="#mattress">Mattress</a></li>
+                <li><a href="#laptops">Laptops</a></li>
+                <!-- <li><a href="#others">Others</a></li> -->
+                
+            </div>
+
+      
+
+
+
+            <div class="messeage">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+
+
+
+
+            <div class="messeage">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+
+
+
+
+            <div class="your_logo">
+                <div class="profile_pic" id="profile_pic_id">
+                    <img src="images/profile_pic.jpeg">
+                </div>
+
+                <div class="dropdwon" id="gropdwonid">
+                    <div class="nameandimg">
+                        <img src="images/pic3.jpg">
+                        <p>Oxygen Addicts</p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <hr>
+
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="selling_page">
+                <button> <i class="fa-solid fa-plus"></i>
+                    <p>SELL</p>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- =============================== * product img * ============================================ -->
+
+
+
+    <div class="product_img">
+
+
+        <div class="image_discription">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"> <img src="images/product1.jpg"> </div>
+                    <div class="swiper-slide"> <img src="images/pro_2.jpg"></div>
+                    <div class="swiper-slide"> <img src="images/pro_3.jpg"></div>
+                    <div class="swiper-slide"> <img src="images/pro_4.jpg"></div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+
+                <div class="swiper-button-prev" id="prev"></div>
+                <div class="swiper-button-next" id="next"></div>
+            </div>
+
+            <div class="descriptiopn">
+                <h3> Discription </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, debitis. <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, placeat? <br>
+                    Condition new.<br>
+                    MRP 3,500</p>
+            </div>
+        </div>
+
+        <div class="product_details">
+            <div class="box">
+                <div class="price">
+                    <h3> ₹3,500</h3>
+                    <div>
+                        <p><i class="fa-solid fa-share-nodes"></i> </p>
+                        <p> <i class="fa-regular fa-heart"></i> </p>
+                    </div>
+                </div>
+                <span>Thomas and Finney 11th Edition</span>
+                <div class="location">
+                    <p>Hostel J</p>
+                    <p>Today</p>
+                </div>
+            </div>
+
+            <div class="box" id="box2">
+                <p class="Seller_description"> Seller Description </p>
+                <div class="seller_detail">
+                    <img src="images/profile_pic.jpeg">
+                    <div>
+                        <h2>Shaurya Bhardwaj</h2>
+                        <p>Member since Nov 2021</p>
+                    </div>
+                </div>
+                <a href="chatbox.html"> Chat with Seller  </a>
+
+            </div>
+
+         <div class="box" id="box3">
+              <h2> Posted in </h2>
+              <p>Thapar University, Patiala</p>
+              <img src="images/location.png" >
+         </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        //  =============================== * navbar * ============================================
+
+        let contry = document.getElementById('college');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+
+        contry.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('roted')
+        });
+        function myfunction(omkar) {
+            text.innerHTML = omkar;
+        }
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+
+
+        language.addEventListener('click', () => {
+            hin_eng.classList.toggle('display_div');
+        });
+        function languageolx(anyone) {
+            eng_tag.innerHTML = anyone;
+        }
+
+        let girl_img_id = document.getElementById('profile_pic_id');
+        let gropdwonid = document.getElementById('gropdwonid');
+
+        girl_img_id.addEventListener('click', () => {
+            gropdwonid.classList.toggle('block_div')
+        });
+
+
+
+
+        //  =============================== * ad 2 * ============================================
+
+
+
+        let adicon2 = document.getElementById('adicon2');
+        let ads_img2 = document.querySelector('.ads_img2');
+
+        adicon2.addEventListener('click', () => {
+            ads_img2.style = 'display: none';
+        });
+
+
+
+
+        //  =============================== * product img* ============================================
+
+
+        const swiper = new Swiper('.swiper', {
+
+            loop: true,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

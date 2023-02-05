@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title> chat box </title>
+</head>
+
+<body>
+
+   
+    <!-- =============================== * navbar * ============================================ -->
+
+    <div class="hedder">
+        <div class="navbar">
+
+
+
+
+            <img src="images/logo.png">
+
+
+
+
+
+
+            <div class="college_select" id="college">
+                <div class="select">
+                    <p id="text"> Select Your College </p>
+                    <i class="fa-solid fa-chevron-down" id="moving"></i>
+                </div>
+
+
+
+                <ul class="option_box" id="list">
+                    <li class="option" onclick="myfunction('Thapar University, Patiala')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Thapar University, Patiala</p>
+                    </li>
+                    <li class="option" onclick="myfunction('IIT Roorkee')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>IIT Roorkee</p>
+                    </li>
+                    <li class="option" onclick="myfunction('VIT, Chennai')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>VIT, Chennai</p>
+                    </li>
+                    <li class="option" onclick="myfunction('Manipal University')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Manipal University</p>
+                    </li>
+                    <li class="option" onclick="myfunction('BITS Pilani, Pilani Campus')">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>BITS Pilani, Pilani Campus</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="search_box">
+                <input type="text" class="searchclass" id="searchid" placeholder="Find Cars, mobile phone and More....">
+                <p> <i class="fa-solid fa-magnifying-glass"></i> </p>
+            </div>
+
+
+            <div class="catalouge">
+                <li><a href="#books">Books</a></li>
+                <li><a href="#bicycles">Bicycles</a></li>
+                <li><a href="#mattress">Mattress</a></li>
+                <li><a href="#laptops">Laptops</a></li>
+                <!-- <li><a href="#others">Others</a></li> -->
+                
+            </div>
+
+      
+
+
+
+            <div class="messeage">
+                <i class="fa-regular fa-comment"></i>
+            </div>
+
+
+
+
+            <div class="messeage">
+                <i class="fa-regular fa-bell"></i>
+            </div>
+
+
+
+
+
+            <div class="your_logo">
+                <div class="profile_pic" id="profile_pic_id">
+                    <img src="images/profile_pic.jpeg">
+                </div>
+
+                <div class="dropdwon" id="gropdwonid">
+                    <div class="nameandimg">
+                        <img src="images/pic3.jpg">
+                        <p>Oxygen Addicts</p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class="fa-regular fa-user"></i>
+                            <p>My Account</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box"></i>
+                            <p>My Orders</p>
+                        </li>
+                        <hr>
+                        <li>
+                            <i class="fa-regular fa-circle-question"></i>
+                            <p>Help</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <p>Setting</p>
+                        </li>
+                        <hr>
+
+                        <li>
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <p>Log Out</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="selling_page">
+                <button> <i class="fa-solid fa-plus"></i>
+                    <p>SELL</p>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!--==================== *  chat box* =============================  -->
+
+
+    <div class="chat_box">
+
+        <div class="heading_chatbox">
+            <div class="img_name_chat">
+                <img src="images/profile_pic.jpeg">
+                <h2> Shaurya </h2>
+            </div>
+            <i class="fa-solid fa-x"></i>
+        </div>
+
+        <div class="see_chat">
+            <h3 id="message"> </h3>
+        </div>
+
+        <div class="send_message">
+            <input type="text" placeholder="Type a message" id="text_message">
+            <input type="text" placeholder="Type a message" id="demo">
+            <i class="fa-solid fa-paper-plane" id="sand_icon"></i>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+        // ==================== *  Navbar * ============================= 
+
+        let contry = document.getElementById('college');
+        let moving = document.getElementById('moving');
+        let text = document.getElementById('text');
+        let list = document.getElementById('list');
+
+        contry.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+            moving.classList.toggle('roted');
+        });
+        function Myfunction(omkar) {
+            text.innerHTML = omkar;
+        }
+
+
+
+        let eng_tag = document.getElementById('eng_tag');
+        let hin_eng = document.querySelector('.hin_eng');
+        let language = document.querySelector('.language');
+
+
+        language.addEventListener('click', () => {
+            hin_eng.classList.toggle('display_div');
+        });
+        function languageolx(anyone) {
+            eng_tag.innerHTML = anyone;
+        }
+
+
+
+        let girl_img_id = document.getElementById('profile_pic_id');
+        let dropdownid = document.getElementById('dropdownid');
+
+        girl_img_id.addEventListener('click', () => {
+            dropdownid.classList.toggle('block_div');
+        });
+
+
+
+        // ==================== *  chat box * ============================= 
+
+        let sand_icon = document.getElementById('sand_icon');
+        let message = document.getElementById('message');
+        let text_message = document.getElementById('text_message');
+        let demo = document.getElementById('demo');
+
+
+        sand_icon.addEventListener('click', () => {
+            message.innerHTML = text_message.value;
+            message.style = 'display: block';
+            text_message.value = demo.value
+        })
+
+
+    </script>
+
+</body>
+
+</html>
