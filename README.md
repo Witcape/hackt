@@ -1,1 +1,1 @@
-# OLX-Clone
+#CampusTraders - a marketplace for universities
